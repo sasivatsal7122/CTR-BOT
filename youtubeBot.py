@@ -6,10 +6,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 
 import random
 import time
 from loguru import logger
+import yt_dlp
+from fake_useragent import UserAgent
 
 
 logger.remove()
@@ -25,6 +28,10 @@ def run_YoutubeBot(target_vid_link,keywords):
     print("Target video link:",target_vid_link)
     logger.info(f"Target video link: {target_vid_link}")
     
+    user_agent = user_agent = UserAgent().random
+    print("User agent:",user_agent)
+    options = Options()
+    options.add_argument(f'user-agent={user_agent}')
     driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
     print("Driver installed.")
     driver.maximize_window()
@@ -68,7 +75,7 @@ def run_YoutubeBot(target_vid_link,keywords):
     search_box.click()
     print("Searching for video...")
     yt_keyword = random.choice(keywords)
-    print("Keyword:",keyword)
+    print("Keyword:",yt_keyword)
     
     logger.info(f"Keyword: {yt_keyword}")
     for letter in yt_keyword:
@@ -117,18 +124,34 @@ def run_YoutubeBot(target_vid_link,keywords):
         time.sleep(3)
         video.click()
         print("Video clicked.")
-        time.sleep(5)
+        print("Waiting for video to load...")
+        
+        with yt_dlp.YoutubeDL({}) as ydl:
+            video_info = ydl.extract_info(target_vid_link, download=False)
+            video_length = video_info.get('duration')
+            
+        print("Total duration:",video_length)
+        watch_percentage = random.uniform(0.8, 0.99)
+        print("Choosen Watch percentage:",watch_percentage)
+        watch_duration = int(video_length * watch_percentage)
+        print("Watching video for :",watch_duration,"secs")
+        time.sleep(watch_duration)
     else:
         print("Video not found.")
         print("Opening the target directly")
         driver.get(target_vid_link)
-        time.sleep(5)
+        print("Waiting for video to load...")
+        
+        with yt_dlp.YoutubeDL({}) as ydl:
+            video_info = ydl.extract_info(target_vid_link, download=False)
+            video_length = video_info.get('duration')
+            
+        print("Total duration:",video_length)
+        watch_percentage = random.uniform(0.8, 0.99)
+        print("Choosen Watch percentage:",round(watch_percentage,2))
+        watch_duration = int(video_length * watch_percentage)
+        print("Watching video for :",round(watch_duration,2),"secs")
+        time.sleep(watch_duration)
         
     driver.quit()
-
-
-
-
-
-
 
