@@ -1,4 +1,3 @@
-from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 
 from webdriver_manager.firefox import GeckoDriverManager
@@ -6,8 +5,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import TimeoutException,ElementNotInteractableException
+from seleniumwire import webdriver
 
 import random
 import time
@@ -15,7 +14,7 @@ from bs4 import BeautifulSoup
 import time
 from loguru import logger
 from fake_useragent import UserAgent
-
+from proxy import get_proxy
 
 logger.remove()
 LOG_FORMAT = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
@@ -31,9 +30,9 @@ def run_GoogleBot(target_url,keywords,target_domain_name):
     
     user_agent = UserAgent().random
     print("User agent:",user_agent)
-    options = Options()
-    options.add_argument(f'user-agent={user_agent}')
-    driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+    
+    seleniumwire_options = get_proxy()
+    driver = webdriver.Firefox(seleniumwire_options=seleniumwire_options,service=Service(GeckoDriverManager().install()))
     driver.maximize_window()
     print("Driver installed.")
     driver.get("https://www.google.com/")

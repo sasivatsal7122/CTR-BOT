@@ -1,4 +1,4 @@
-from selenium import webdriver
+from seleniumwire import webdriver
 from selenium.webdriver.firefox.service import Service
 
 from webdriver_manager.firefox import GeckoDriverManager
@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import TimeoutException,ElementNotInteractableException
-
+from proxy import get_proxy
 
 import random
 import time
@@ -33,7 +33,8 @@ def run_BingBot(target_url,keywords,target_domain_name):
     print("User agent:",user_agent)
     options = Options()
     options.add_argument(f'user-agent={user_agent}')
-    driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+    seleniumwire_options = get_proxy()
+    driver = webdriver.Firefox(seleniumwire_options=seleniumwire_options,service=Service(GeckoDriverManager().install()))
     driver.maximize_window()
     print("Driver installed.")
     driver.get('https://www.bing.com/')
