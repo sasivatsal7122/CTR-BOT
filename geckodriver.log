@@ -6970,3 +6970,250 @@ JavaScript warning: https://r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js, lin
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
 1683218413355	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.bing.com."
+1683555212160	geckodriver	INFO	Listening on 127.0.0.1:50467
+1683555212671	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "60001" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileGQM37E"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683555213197	Marionette	INFO	Marionette enabled
+1683555213200	Marionette	INFO	Listening on port 34537
+Read port: 34537
+WebDriver BiDi listening on ws://127.0.0.1:60001
+1683555213314	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683555213327	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:34491","sslProxy":"127.0.0.1:34491"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGQM37E/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 414))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:60001/devtools/browser/b092c9ea-ea5d-4c42-a5f8-c8e14a1e1ed5
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+1683555277202	geckodriver	INFO	Listening on 127.0.0.1:57303
+1683555277204	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "39995" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqmj2Pz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683555277660	Marionette	INFO	Marionette enabled
+1683555277662	Marionette	INFO	Listening on port 34241
+Read port: 34241
+WebDriver BiDi listening on ws://127.0.0.1:39995
+1683555277757	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683555277771	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:35479","sslProxy":"127.0.0.1:35479"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqmj2Pz/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:39995/devtools/browser/4130e119-88af-4cf1-82d7-a74a5ee4e5fa
+JavaScript warning: https://r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1683555282826	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.bing.com."
+1683555588315	geckodriver	INFO	Listening on 127.0.0.1:44405
+1683555588825	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36659" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileoi73wX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683555589298	Marionette	INFO	Marionette enabled
+1683555589300	Marionette	INFO	Listening on port 42631
+Read port: 42631
+WebDriver BiDi listening on ws://127.0.0.1:36659
+1683555589420	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683555589432	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:41053","sslProxy":"127.0.0.1:41053"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoi73wX/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:36659/devtools/browser/1f542478-9ce3-4b51-8fc9-075fc6a6e032
+JavaScript warning: https://r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1683555595611	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.bing.com."
+JavaScript error: https://owaspviit.com/assets/js/main.js, line 557: TypeError: document.querySelector(...) is null
+1683555911590	Marionette	INFO	Stopped listening on port 42631
+1683556522576	geckodriver	INFO	Listening on 127.0.0.1:48667
+1683556523079	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "53839" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileso16yS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683556523560	Marionette	INFO	Marionette enabled
+1683556523562	Marionette	INFO	Listening on port 42493
+Read port: 42493
+WebDriver BiDi listening on ws://127.0.0.1:53839
+1683556523668	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683556523682	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:39413","sslProxy":"127.0.0.1:39413"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileso16yS/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53839/devtools/browser/05abc3bc-334b-4286-8869-0d73bcd85e71
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1683556654278	Marionette	INFO	Stopped listening on port 42493
+1683556841411	geckodriver	INFO	Listening on 127.0.0.1:55547
+1683556841920	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "41311" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileMAQfHL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683556842412	Marionette	INFO	Marionette enabled
+1683556842414	Marionette	INFO	Listening on port 36335
+Read port: 36335
+WebDriver BiDi listening on ws://127.0.0.1:41311
+1683556842532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683556842544	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:36289","sslProxy":"127.0.0.1:36289"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMAQfHL/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:41311/devtools/browser/097efc81-b0e2-4d39-9218-aef6453c087f
+JavaScript warning: https://r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1683556848811	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.bing.com."
+1683556894752	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556906030	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556917193	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556926914	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556936439	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556946154	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556955346	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556964401	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1683556973566	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://owaspviit.com/assets/js/main.js, line 557: TypeError: document.querySelector(...) is null
+1683557117396	Marionette	INFO	Stopped listening on port 36335
+1683557202949	geckodriver	INFO	Listening on 127.0.0.1:36039
+1683557203458	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "56909" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDmg0xL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683557203938	Marionette	INFO	Marionette enabled
+1683557203940	Marionette	INFO	Listening on port 40803
+Read port: 40803
+WebDriver BiDi listening on ws://127.0.0.1:56909
+1683557204060	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683557204072	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:46849","sslProxy":"127.0.0.1:46849"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDmg0xL/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:56909/devtools/browser/a63d2d75-3508-4b87-8dfd-fb9d8dbf29ae
+JavaScript warning: https://r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1683557211474	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.bing.com."
+JavaScript error: https://owaspviit.com/assets/js/main.js, line 557: TypeError: document.querySelector(...) is null
+1683557533464	Marionette	INFO	Stopped listening on port 40803
+1683557715137	geckodriver	INFO	Listening on 127.0.0.1:51089
+1683557715141	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "37905" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezVqE5G"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683557715597	Marionette	INFO	Marionette enabled
+1683557715599	Marionette	INFO	Listening on port 42827
+Read port: 42827
+WebDriver BiDi listening on ws://127.0.0.1:37905
+1683557715701	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683557715715	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:44645","sslProxy":"127.0.0.1:44645"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezVqE5G/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:37905/devtools/browser/a73e888f-bb6f-4fd3-925f-37656346f478
+JavaScript warning: https://r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1683557721969	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.bing.com."
+JavaScript error: https://owaspviit.com/assets/js/main.js, line 557: TypeError: document.querySelector(...) is null
+1683558023704	Marionette	INFO	Stopped listening on port 42827
+1683558271646	geckodriver	INFO	Listening on 127.0.0.1:38159
+1683558271649	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "54447" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile28USwk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683558272105	Marionette	INFO	Marionette enabled
+1683558272107	Marionette	INFO	Listening on port 36385
+Read port: 36385
+WebDriver BiDi listening on ws://127.0.0.1:54447
+1683558272209	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683558272224	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:35579","sslProxy":"127.0.0.1:35579"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile28USwk/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54447/devtools/browser/c2c5941c-1a29-4a80-9387-27372d4e80d7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1683559019891	Marionette	INFO	Stopped listening on port 36385
+1683559032724	geckodriver	INFO	Listening on 127.0.0.1:36705
+1683559033234	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "42949" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledLkTWB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683559033759	Marionette	INFO	Marionette enabled
+1683559033761	Marionette	INFO	Listening on port 42795
+Read port: 42795
+WebDriver BiDi listening on ws://127.0.0.1:42949
+1683559033877	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1683559033891	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:35369","sslProxy":"127.0.0.1:35369"}
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledLkTWB/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:42949/devtools/browser/4f26d3fd-c47c-4360-82b2-613080047e19
+JavaScript warning: https://r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+1683559039875	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.bing.com."
+1683559336261	Marionette	INFO	Stopped listening on port 42795

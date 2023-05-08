@@ -21,14 +21,11 @@ logger.remove()
 LOG_FORMAT = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
 logger.add("logger.log", format=LOG_FORMAT)
 
-def run_YoutubeBot(target_vid_link,keywords):   
+def run_YoutubeBot(target_vid_link,keywords,alternate_target_urL):   
     
     """ Runs the bot for Youtube search engine."""
-
+   
     logger.info(f"STARTED YOUTUBE BOT")
-    
-    print("Target video link:",target_vid_link)
-    logger.info(f"Target video link: {target_vid_link}")
     
     user_agent = user_agent = UserAgent().random
     print("User agent:",user_agent)
@@ -78,6 +75,9 @@ def run_YoutubeBot(target_vid_link,keywords):
     search_box.click()
     print("Searching for video...")
     yt_keyword = random.choice(keywords)
+    target_vid_link = random.choice(target_vid_link)
+    print("Target video link:",target_vid_link)
+    logger.info(f"Target video link: {target_vid_link}")
     print("Keyword:",yt_keyword)
     
     logger.info(f"Keyword: {yt_keyword}")
@@ -142,7 +142,7 @@ def run_YoutubeBot(target_vid_link,keywords):
     else:
         print("Video not found.")
         print("Opening the target directly")
-        driver.get(target_vid_link)
+        driver.get(alternate_target_urL)
         print("Waiting for video to load...")
         
         with yt_dlp.YoutubeDL({}) as ydl:

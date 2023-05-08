@@ -11,6 +11,8 @@ from selenium.common.exceptions import TimeoutException,ElementNotInteractableEx
 from proxy import get_proxy
 
 import random
+import pandas as pd
+from datetime import datetime
 import time
 from bs4 import BeautifulSoup
 import time
@@ -22,19 +24,21 @@ logger.remove()
 LOG_FORMAT = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
 logger.add("logger.log", format=LOG_FORMAT)
 
-def run_BingBot(target_url,keywords,target_domain_name):
+def run_BingBot(target_url,keywords,alternate_target_urL):
     """Runs the bot for Bing search engine."""
     
-    logger.info(f"STARTED BING BOT")
+    found_urls = []
+    url_titles = []
     
-    print("Target URL:",target_url)
+    logger.info(f"STARTED BING BOT")
     
     user_agent = user_agent = UserAgent().random
     print("User agent:",user_agent)
     options = Options()
     options.add_argument(f'user-agent={user_agent}')
     seleniumwire_options = get_proxy()
-    driver = webdriver.Firefox(seleniumwire_options=seleniumwire_options,service=Service(GeckoDriverManager().install()))
+    #driver = webdriver.Firefox(seleniumwire_options=seleniumwire_options,service=Service(GeckoDriverManager().install()))
+    driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
     driver.maximize_window()
     print("Driver installed.")
     driver.get('https://www.bing.com/')
@@ -45,6 +49,8 @@ def run_BingBot(target_url,keywords,target_domain_name):
         )
     search_box = driver.find_element(By.NAME, "q")
     keyword = random.choice(keywords)
+    target_url = random.choice(target_url)
+    print("Target URL:",target_url)
     print("Keyword:",keyword)
 
     for letter in keyword:
@@ -63,7 +69,7 @@ def run_BingBot(target_url,keywords,target_domain_name):
    
     logger.info(f"\n\n\n ========= {keyword} ========= \n")
     logger.info(f"Searching for target domain: {target_url}")
-    print("Searching for target domain:",target_domain_name)
+    print("Searching for target domain:",target_url)
     while flag:
         if counter>10:
             break
@@ -78,10 +84,12 @@ def run_BingBot(target_url,keywords,target_domain_name):
             for result in search_results:
                 hyperlink = result.find("cite").text
                 title = result.find("h2").text
+                found_urls.append(hyperlink)
+                url_titles.append(title)
                 logger.info(f"{counter}.{hyperlink} \n")
             
                 print(hyperlink,"-->",title)
-                if target_domain_name in hyperlink:
+                if target_url in hyperlink:
                     target_title = title
                     print(f"====== Found The Link ======= at index - {counter}")
                     flag=False
@@ -143,10 +151,29 @@ def run_BingBot(target_url,keywords,target_domain_name):
         
     else:
         print("Target domain not found in first 10 pages.")
-        driver.get(target_url)
+        driver.get(alternate_target_urL)
         sleep_time = random.uniform(60, 60*2) 
         print(f"Waiting for {round(sleep_time,2)} seconds.")
         time.sleep(sleep_time)
+        
+    now = datetime.utcnow()
+    utc_timestamp = now.strftime("%d/%m/%Y %H:%M:%S")
+
+    new_data = pd.DataFrame({
+        "search engine": ["Bing"] * len(found_urls),
+        "Keyword": [keyword] * len(found_urls),
+        "Found URLs": found_urls,
+        "URL Title": url_titles,
+        "UTC": [utc_timestamp] * len(found_urls)
+    })
+    
+    try:
+        existing_df = pd.read_excel("logs.xlsx")
+    except FileNotFoundError:
+        existing_df = pd.DataFrame()
+
+    combined_df = pd.concat([existing_df, new_data], ignore_index=True)
+    combined_df.to_excel("logs.xlsx", index=False)
         
     driver.quit()
 

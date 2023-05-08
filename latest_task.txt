@@ -1,0 +1,15 @@
+1. save the scrape url and their information in excel sheet/ or text file
+2. Random URL / Random Keywords --> COMPLETED
+3. Keyword / open any url from the list if match
+4. url:keyword
+  url:keyword
+{keyword1|keyword2|keyword3}:{URL1|URL2|URL3}
+
+5. If our URL not found on 10 pages so it will open URL 2 --> COMPLETED
+
+
+URL : keyword 1
+URL : keyword 2
+URL : keyword 3
+URL1: Keyword 4
+URL
