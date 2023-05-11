@@ -21,7 +21,7 @@ logger.remove()
 LOG_FORMAT = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
 logger.add("logger.log", format=LOG_FORMAT)
 
-def run_YoutubeBot(target_vid_link,keywords,alternate_target_urL):   
+def run_YoutubeBot(target_vid_link,keyword,alternate_target_urL):   
     
     """ Runs the bot for Youtube search engine."""
    
@@ -32,7 +32,7 @@ def run_YoutubeBot(target_vid_link,keywords,alternate_target_urL):
     options = Options()
     options.add_argument(f'user-agent={user_agent}')
     seleniumwire_options = get_proxy()
-    driver = webdriver.Firefox(seleniumwire_options=seleniumwire_options,service=Service(GeckoDriverManager().install()))
+    driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
     print("Driver installed.")
     driver.maximize_window()
 
@@ -74,8 +74,7 @@ def run_YoutubeBot(target_vid_link,keywords,alternate_target_urL):
     search_box = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.NAME, "search_query")))
     search_box.click()
     print("Searching for video...")
-    yt_keyword = random.choice(keywords)
-    target_vid_link = random.choice(target_vid_link)
+    yt_keyword = keyword
     print("Target video link:",target_vid_link)
     logger.info(f"Target video link: {target_vid_link}")
     print("Keyword:",yt_keyword)

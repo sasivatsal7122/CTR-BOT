@@ -22,7 +22,7 @@ logger.remove()
 LOG_FORMAT = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
 logger.add("logger.log", format=LOG_FORMAT)
 
-def run_GoogleBot(target_url,keywords,alternate_target_urL):
+def run_GoogleBot(target_url,keyword,alternate_target_urL):
     
     """Runs the bot for Google search engine."""
     found_urls = []
@@ -54,8 +54,7 @@ def run_GoogleBot(target_url,keywords,alternate_target_urL):
             EC.presence_of_element_located((By.NAME, "q"))
         )
     search_box = driver.find_element(By.NAME, "q")
-    keyword = random.choice(keywords)
-    target_url = random.choice(target_url)
+
     print("Target URL:",target_url)
     print("Keyword:",keyword)
     for letter in keyword:
