@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup
 import time
 from loguru import logger
 from fake_useragent import UserAgent
+from randomAction import human_click
 
 
 logger.remove()
@@ -144,16 +145,16 @@ def run_BingBot(target_url,keyword,alternate_target_urL):
         except (TimeoutException,ElementNotInteractableException):
              driver.get(target_url)
         print("Target domain clicked.")
-        sleep_time = random.uniform(60, 60*2) 
-        print(f"Waiting for {round(sleep_time,2)} seconds.")
-        time.sleep(sleep_time)
+        print("Performing random action on the webpage")
+        human_click(driver,num_clicks=5)
+        print("Random action performed.")
         
     else:
         print("Target domain not found in first 10 pages.")
         driver.get(alternate_target_urL)
-        sleep_time = random.uniform(60, 60*2) 
-        print(f"Waiting for {round(sleep_time,2)} seconds.")
-        time.sleep(sleep_time)
+        print("Performing random action on the webpage")
+        human_click(driver,num_clicks=5)
+        print("Random action performed.")
         
     now = datetime.utcnow()
     utc_timestamp = now.strftime("%d/%m/%Y %H:%M:%S")
